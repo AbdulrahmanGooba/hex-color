@@ -1,0 +1,93 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.color{
+  background-color: rgb(230, 217, 217);
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  border: solid;
+}
+
+.box{
+  background-color: aliceblue;
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.hex-color{
+align-self: center;
+margin-top: 10px;
+font-size: 20px;
+}
+
+.hex-color > button{
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+#btn {
+  margin-top: 50px;
+  position: absolute;
+  left: 47.5%;
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+}
+
+#btn:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+#btn:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+#btn:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+#btn:disabled:active {
+  pointer-events: none;
+}
+
+#btn:disabled:hover {
+  box-shadow: none;
+}
